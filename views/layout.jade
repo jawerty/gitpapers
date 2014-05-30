@@ -1,0 +1,43 @@
+doctype html
+html(lang='en')
+head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    title GitPapers
+    //
+       Bootstrap core CSS 
+    link(href='stylesheets/bootstrap.min.css', rel='stylesheet')
+    //
+       Custom Google Web Font 
+    link(href='font-awesome/css/font-awesome.min.css', rel='stylesheet')
+    link(href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic', rel='stylesheet', type='text/css')
+    //
+       Add custom CSS here 
+    link(href='stylesheets/landing-page.css', rel='stylesheet')
+  body
+    block content
+    footer
+      .container
+        .row
+          .col-lg-12
+            ul.list-inline
+              li
+                a(href='/') Home
+              li.footer-menu-divider ⋅
+              li
+                a(href='/') About
+              li.footer-menu-divider ⋅
+              li
+                a(href='http://github.com/jawerty/gitpapers') Github
+              br
+              br
+              a(href="https://twitter.com/share" class="twitter-share-button" data-url="http://gitpapers.com" data-text="GitPapers - Blogging Platform using GitHub" data-via="Jawerty" data-hashtags="GitPapers") Tweet
+              script(type="text/javascript")
+                !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+            p.copyright.text-muted.small Copyright © GitPapers 2014. All Rights Reserved
+    //
+       JavaScript 
+    script(src='javascripts/jquery-1.10.2.js')
+    script(src='javascripts/bootstrap.js')

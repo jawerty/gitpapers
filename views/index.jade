@@ -1,0 +1,74 @@
+extends layout
+
+block content
+  .intro-header
+    .container
+      .row
+        .col-lg-12
+          .intro-message
+            h1 GitPapers
+            h3 A Blog Publishing Platform for Git
+            hr.intro-divider
+            ul.list-inline.intro-social-buttons
+              li
+                a.btn.btn-default.btn-lg(href="https://github.com/login/oauth/authorize?scope=user:email&client_id="+client_id)
+                  i.fa.fa-github.fa-fw
+                  span.network-name Login With GitHub
+    //
+       /.container 
+  //
+     /.intro-header 
+  .content-section-a
+    .container
+      .row
+        .col-lg-5.col-sm-7
+          .clearfix
+          h2.section-heading
+            | Recent Posts:
+          
+          div(style="display:inline-block")
+            img.img-responsive(id = "prof" src="https://avatars.githubusercontent.com/u/1999719?" style="height: 150px; width: 150px;margin-right: 20px;")
+          div(style="display:inline-block;vertical-align:top;word-wrap: break-word;")
+            p.lead
+             a(href="http://gitpapers.com/jawerty/post/I_Love_CodeDay", style="font-size: 200%;") I Love CodeDay
+            p.lead(style="font-size:130%") jawerty
+
+          div(style="display:inline-block")
+            img.img-responsive(id = "prof" src="https://avatars.githubusercontent.com/u/2737732?" style="height: 150px; width: 150px;margin-right: 20px;")
+          div(style="display:inline-block;vertical-align:top;word-wrap: break-word;")
+            p.lead
+             a(href="http://gitpapers.com/elklein96/post/First_Post", style="font-size: 200%;") First Post
+            p.lead(style="font-size:130%") elklein96
+
+        .col-lg-4.col-lg-offset-2.col-sm-5
+          .clearfix
+          h2.section-heading
+            | Getting Started (beta):
+          p.lead
+            | Ready to make your first post?
+          p.lead
+            | First, create and initialize a new GitHub repository named 
+            b gitpapers-blog.
+          p.lead
+            | Next, write up the article you want to post in a markdown (.md) file.
+          p.lead
+            | Finally, add your markdown (.md) file to the repository.
+            | Here's a sample repository for reference.
+            br
+            br
+            a.btn.btn-default.btn-lg(href="https://github.com/jawerty/gitpapers-blog")
+              i.fa.fa-github.fa-fw
+              span.network-name Fork Sample
+          .clearfix
+          h2.section-heading
+            | About Us:
+          p.lead
+            | GitPapers is a blogging platform that uses GitHub as a service. 
+            | Created during CodeDay Philly.
+            .br
+          p.lead
+            | Fork our sample to get started.
+    //
+       /.container 
+  //
+     /.content-section-a 
